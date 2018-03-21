@@ -24,6 +24,7 @@ namespace ProjectEuler.net
             sum = ListSum(listOfNumbers);
             numberString = sum.ToString("0." + new string('#', 339)).Substring(0, 10);
             Console.WriteLine(numberString);
+            //answer is 5537376230
         }
 
         private static double ListSum(List<double> listOfNumbers)

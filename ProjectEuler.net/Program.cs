@@ -6,7 +6,8 @@ namespace ProjectEuler.net
     {
         static void Main(string[] args)
         {
-            ProjectEuler13.ProjectEulerQ13();
+            //ProjectEuler13.ProjectEulerQ13();
+            ProjectEuler15.ProjectEulerQ15();
         }
     }
 }
