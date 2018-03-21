@@ -4,10 +4,11 @@ using System.Collections.Generic;
 
 namespace ProjectEuler.net
 {
-    public class projecteuler13
+    public class ProjectEuler13
     {
-        public projecteuler13()
+        public static void ProjectEulerQ13()
         {
+            double sum;
             List<double> listOfNumbers = new List<double>();
             string numberString;
             StreamReader projectEulerNumber = new StreamReader(@"/Users/FamousChamus/Projects/ProjectEuler.net/ProjectEuler.net/projecteuler13.txt");
@@ -20,10 +21,12 @@ namespace ProjectEuler.net
                 }
                 listOfNumbers.Add(double.Parse(numberString));
             }
-            ListSum(listOfNumbers);
-
+            sum = ListSum(listOfNumbers);
+            numberString = sum.ToString("0." + new string('#', 339)).Substring(0, 10);
+            Console.WriteLine(numberString);
         }
-        public double ListSum(List<double> listOfNumbers)
+
+        private static double ListSum(List<double> listOfNumbers)
         {
             double sum = 0;
             foreach (var item in listOfNumbers)
