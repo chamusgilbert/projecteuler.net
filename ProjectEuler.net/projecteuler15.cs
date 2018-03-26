@@ -5,7 +5,7 @@ namespace ProjectEuler.net
     {
         public static void ProjectEulerQ15()
         {
-            //Did some research into the Multiplication Principals of Probability
+            //Factoring Solution;
 
             const int gridSize = 20;
             long path = 1;
